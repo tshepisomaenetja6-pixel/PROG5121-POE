@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Prime Property Services</title>
+    <meta name="description"
+          content="Contact Prime Property Services for general questions and customer support.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header and navigation -->
+    <header>
+        <h1>Prime Property Services</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Have a question about our business?
+                Complete the form below to contact us.
+            </p>
+
+            <!-- General contact form -->
+            <form id="contactForm">
+                <label for="contactName">Full Name:</label>
+                <input type="text" id="contactName"
+                       name="contactName" required>
+
+                <br><br>
+
+                <label for="contactEmail">Email Address:</label>
+                <input type="email" id="contactEmail"
+                       name="contactEmail" required>
+
+                <br><br>
+
+                <label for="messageType">Message Type:</label>
+                <select id="messageType" name="messageType"
+                        required>
+                    <option value="">Select an option</option>
+                    <option value="general">General Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="complaint">Complaint</option>
+                </select>
+
+                <br><br>
+
+                <label for="contactMessage">Your Message:</label>
+                <textarea id="contactMessage"
+                          name="contactMessage"
+                          rows="5" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Prepare Email</button>
+            </form>
+            <p id="contactResponse" role="status"></p>
+        </section>
+
+        <!-- Business location information -->
+        <section>
+            <h2>Our Service Areas</h2>
+            <p>We serve clients in Johannesburg and Pretoria.</p>
+            <p>
+                Contact us to confirm availability
+                in your area.
+            </p>
+            <div class="maps">
+                 <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.1234567890123!2d28.0473053150000!3d-26.2041023850000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950a1234567890%3A0xabcdef1234567890!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1234567890123"
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+             <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.1234567890123!2d28.0473053150000!3d-25.7478673850000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950a1234567890%3A0xabcdef1234567890!2sPretoria%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1234567890123"
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Prime Property Services.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
